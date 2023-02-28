@@ -5,6 +5,8 @@ import Meals from "./components/Meals/Meals";
 import Cart from "./components/Cart/Cart";
 
 function App() {
+  console.log(process.env.REACT_APP_API_URL)
+
   const [cartIsShown, setCartIsShown] = useState(false);
 
   const showCartHandler = () => {
